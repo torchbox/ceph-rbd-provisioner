@@ -5,7 +5,7 @@ FROM centos:7
 RUN yum -y install git
 
 # Install go
-RUN curl -sSL https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz | gzip -dc | tar xf - -C /usr/local
+RUN curl -sSL https://dl.google.com/go/go1.10.1.linux-amd64.tar.gz | gzip -dc | tar xf - -C /usr/local
 
 ENV GOPATH /usr/src/go
 ENV PATH /usr/local/go/bin:/usr/local/bin:/bin:/usr/bin
